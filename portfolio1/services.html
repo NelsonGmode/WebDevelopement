@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head> 
+        <title>Services</title>
+    </head>
+    <body>
+        
+
+<link href="stylesheet.css" rel="stylesheet"/>
+<nav class="navbar">
+    <a href="welcome-page.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+</nav>
+<h1>What we Offer</h1>
+<video width="640" height="360" controls poster="media/garden-sm.jpg">
+    <source src="media/raindrops.mp4" type="video/mp4">
+    <source src="media/raindrops.oggtheora.ogv" type="video/ogv"> 
+    <source src="media/raindrops.webmhd.webm" type="video/webm"> 
+    this video format is not supported 
+</video><br>
+
+
+<img id="robot" src="media/computer.jpg"><br>
+<button onclick="toggleImage()">Show/Hide Computer Tree</button>
+
+<script>
+function toggleImage() {
+    var img = document.getElementById("robot");
+    if (img.src.includes("computer.jpg")) {
+        img.src = "media/computer-tree.jpg"; // Switch to the computer tree image
+    } else {
+        img.src = "media/computer.jpg"; // Switch back to the computer image
+    }
+}
+</script>
+
+
+<footer>
+       
+    copyright(c)
+ </footer>
+</body>
+</html>
